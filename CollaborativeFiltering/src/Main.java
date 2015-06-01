@@ -9,9 +9,10 @@ public class Main {
 		
 		//System.out.println();
 		boolean match = false; //using for calculate vector similarity
-		u2u(scoreBoard, 0, match); //Question 1
-		u2u(scoreBoard, 1, match);
-		i2i(scoreBoard, 0, match); //Question 2
+		// DO NOT run the following codes at one time!
+		//u2u(scoreBoard, 0, match); //Question 1
+		//u2u(scoreBoard, 1, match);
+		//i2i(scoreBoard, 0, match); //Question 2
 		i2i(scoreBoard, 1, match); //Question 3
 		
 		
