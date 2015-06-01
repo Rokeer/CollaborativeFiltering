@@ -249,9 +249,9 @@ public class Main {
 		}
 		System.out.println("Calculate similarity for each pair of user");
 		System.out.println(Arrays.deepToString(simTable));
-		scoreBoard = u2up(length, width, scoreBoard, avg, simTable);
+		//scoreBoard = u2up(length, width, scoreBoard, avg, simTable);
 		System.out.println("Calculate each blank");
-		System.out.println(Arrays.deepToString(scoreBoard));
+		System.out.println(Arrays.deepToString(u2up(length, width, scoreBoard, avg, simTable)));
 		//System.out.println(scoreBoard[1][1]);
 	}
 	
@@ -274,9 +274,9 @@ public class Main {
 		
 		System.out.println("Calculate similarity for each pair of user");
 		System.out.println(Arrays.deepToString(simTable));
-		scoreBoard = i2ip(length, width, scoreBoard, avg, simTable);
+		//scoreBoard = i2ip(length, width, scoreBoard, avg, simTable);
 		System.out.println("Calculate each blank");
-		System.out.println(Arrays.deepToString(scoreBoard));
+		System.out.println(Arrays.deepToString(i2ip(length, width, scoreBoard, avg, simTable)));
 		//System.out.println(scoreBoard[1][1]);
 		
 	}
