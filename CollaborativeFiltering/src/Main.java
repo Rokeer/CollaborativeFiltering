@@ -12,8 +12,8 @@ public class Main {
 		// DO NOT run the following codes at one time!
 		//u2u(scoreBoard, 0, match); //Question 1
 		//u2u(scoreBoard, 1, match);
-		//i2i(scoreBoard, 0, match); //Question 2
-		i2i(scoreBoard, 1, match); //Question 3
+		i2i(scoreBoard, 0, match); //Question 2
+		//i2i(scoreBoard, 1, match); //Question 3
 		
 		
 	}
@@ -144,9 +144,12 @@ public class Main {
 						} else { //i2i
 							if(match){
 								//System.out.println("i="+i+",j="+j+",first="+scoreBoard[j][m]+" - "+avg[j]);
-								first = first + Double.parseDouble(scoreBoard[m][i]) * Double.parseDouble(scoreBoard[m][j]);
-								second = second + Math.pow(Double.parseDouble(scoreBoard[m][i]),2);
-								third = third + Math.pow(Double.parseDouble(scoreBoard[m][j]),2);
+								if(!scoreBoard[m][i].equals("")&&!scoreBoard[m][j].equals("")){
+									first = first + Double.parseDouble(scoreBoard[m][i]) * Double.parseDouble(scoreBoard[m][j]);
+									second = second + Math.pow(Double.parseDouble(scoreBoard[m][i]),2);
+									third = third + Math.pow(Double.parseDouble(scoreBoard[m][j]),2);
+								}
+								
 							} else {
 								double a = 0.0;
 								double b = 0.0;
